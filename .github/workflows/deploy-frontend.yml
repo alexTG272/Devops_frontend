@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  ECR_REPO_FRONTEND: innovatech-frontend
+  ECR_REPO_FRONTEND: eksfrontend
 
 jobs:
   build-and-deploy:
