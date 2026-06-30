@@ -1,14 +1,13 @@
-# Innovatech Frontend
+Frontend - Innovatech Chile
+Este repositorio contiene el frontend del sistema Innovatech Chile, desarrollado como parte de la Evaluación Parcial de la asignatura Introducción a Herramientas DevOps.
 
-Frontend del sistema **Innovatech Chile**, desarrollado para la
-Evaluación Parcial de la asignatura **Introducción a Herramientas
-DevOps**.
+El proyecto está construido con Vue.js y Vite, garantizando un entorno de desarrollo rápido y optimizado. Su infraestructura y ciclo de vida se basan en prácticas modernas de DevOps:
 
-La aplicación fue desarrollada utilizando **Vue + Vite** y desplegada
-sobre **Amazon EKS (Kubernetes)**. El proceso de integración y
-despliegue continuo se encuentra automatizado mediante **GitHub
-Actions**, mientras que las imágenes Docker son almacenadas en **Amazon
-Elastic Container Registry (ECR)**.
+CI/CD: El flujo de integración y despliegue continuo está completamente automatizado mediante GitHub Actions.
+
+Registro de Contenedores: Las imágenes Docker generadas se almacenan de forma segura en Amazon ECR.
+
+Despliegue: La aplicación está orquestada y alojada en la nube sobre Amazon EKS (Kubernetes).
 
 ------------------------------------------------------------------------
 
@@ -40,15 +39,6 @@ Elastic Container Registry (ECR)**.
 
 ------------------------------------------------------------------------
 
-# Arquitectura
-
-El Frontend se ejecuta como un Deployment independiente dentro del
-clúster de Kubernetes y es publicado mediante un Service de tipo
-**LoadBalancer**, permitiendo el acceso público a la aplicación. La
-comunicación con los microservicios de Ventas y Despachos se realiza
-mediante los Services internos del clúster.
-
-------------------------------------------------------------------------
 
 # Pipeline CI/CD
 
@@ -74,17 +64,6 @@ Los manifiestos YAML se encuentran en la carpeta **k8s/**.
 
 ------------------------------------------------------------------------
 
-# Ejecución local
-
-``` bash
-npm install
-npm run build
-
-docker build -t innovatech-frontend .
-docker run -d -p 80:80 innovatech-frontend
-```
-
-------------------------------------------------------------------------
 
 # Seguridad
 
@@ -96,30 +75,6 @@ docker run -d -p 80:80 innovatech-frontend
 
 ------------------------------------------------------------------------
 
-# Estructura del proyecto
-
-``` text
-Frontend-deploy/
-├── src/
-├── public/
-├── k8s/
-│   ├── frontend-deployment.yaml
-│   ├── frontend-service.yaml
-│   └── hpa.yaml
-├── .github/
-│   └── workflows/
-│       └── deploy-frontend.yml
-├── Dockerfile
-└── package.json
-```
-
-------------------------------------------------------------------------
-
-# Integrantes
-
--   Fernanda Paredes
-
-------------------------------------------------------------------------
 
 # Asignatura
 
