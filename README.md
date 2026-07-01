@@ -1,9 +1,9 @@
 # Innovatech Chile - Sistema de Despachos y Ventas
 
-## 📌 Descripción del Proyecto
+## Descripción del Proyecto
 Este repositorio contiene la implementación de un entorno productivo en la nube (AWS) para el sistema de Despachos y Ventas de **Innovatech Chile**. El proyecto orquesta una arquitectura de microservicios compuesta por un frontend y dos servicios backend, garantizando alta disponibilidad, escalabilidad automatizada y un flujo continuo de integración y despliegue (CI/CD).
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 * **Frontend:** Vue.js servido a través de Nginx.
 * **Backend:** Java Spring Boot (Microservicios de Despachos y Ventas).
 * **Base de Datos:** MySQL.
